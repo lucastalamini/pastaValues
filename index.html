@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <style>
+      .row {
+        margin-top: 25vh;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+
+      label {
+        font-size: 1.8rem;
+      }
+    </style>
+    <title>Cálculo Massas</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div id="peso-form" class="card-panel">
+          <form>
+            <label>Insira o peso da massa (g)</label>
+            <input id="peso-input" />
+            <button class="btn">Calcular!</button>
+          </form>
+        </div>
+
+        <div id="resultado-form" class="card-panel hide">
+          <div>
+            O valor é:
+            <input id="resultado-input" />
+            <div id="novo-cálculo" class="btn">Novo Cálculo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
