@@ -8,7 +8,10 @@ document.querySelector("form").addEventListener("submit", (event) => {
   const input = document.querySelector("#peso-input").value;
   console.log(input);
 
-  const calculoPeso = parseFloat((input * 6.9) / 150).toFixed(2);
+  const peso = 150;
+  const preço = 6.9;
+
+  const calculoPeso = parseFloat((input * preço) / peso).toFixed(2);
   console.log(calculoPeso);
 
   const resultadoInput = document.querySelector("#resultado-input");
